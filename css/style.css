@@ -1,0 +1,92 @@
+/* Navigacija */
+.pavadinimas{
+  color: #ffff;
+}
+.paieskosDiv {
+  display: flex;
+  width: 100%;
+}
+.navbar{
+  display: flex;
+}
+.ieskojimoEilute {
+  flex: 1;
+  width: 100%;
+  padding: 5px 25px;
+  border: 0;
+}
+.paieska{
+  background-color: white;
+  border: none;
+  padding: 5px 25px;
+  text-align: center;
+  display: inline-block;
+}
+/* Miesto blokas */
+.miestas{
+  color: #ffff;
+}
+.kitas{
+  background-image: url("../img/debesys.jpg");
+  background-size: cover;
+  height: 400px;
+  padding: .5rem 1rem;
+}
+.eilute{
+  display: inline-flex;
+  width: 100%;
+}
+#prideti{
+  margin-top:10px;
+  background-color: #000000;
+  border: none;
+}
+.pridetiMiesta{
+  display: inline-flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ffff;
+}
+/* Savaitės oras */
+.virsutine {
+    padding-top: 25px;
+}
+.display {
+    display: inline-block;
+    text-align: center;
+    margin: 1px;
+    width: 200px;
+    height: 200px;
+    background: white;
+}
+.display:hover {
+    width: 300px;
+    height: 250px;
+}
+/* Stulpeliai */
+.container{
+    padding: 10px;
+}
+
+/* Valandiniai stulpeliai */
+
+.sekantis{
+    overflow-x: scroll;
+    height: 300px;
+}
+.valandos {
+    display: flex;
+    width: 180%;
+}
+.next{
+    margin: 1px;
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+    height: 280px;
+    background: grey;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+

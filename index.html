@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="LT">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container-fluid" style="padding: 0;">
+            <div class="navigacija">
+                <nav class="navbar navbar-dark bg-primary">
+                    <h1 class="pavadinimas">WEATHER</h1>
+                    <div class="col-sm-10">
+                        <div class="paieskosDiv">
+                            <input class="ieskojimoEilute" type="search" name="search" placeholder="Enter a city" value="Jonava">
+                            <button class="paieska" type="submit"><i class="fa fa-search searchIcon" style="font-size: 1.8em;"></i></button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="kitas">
+                <div class="eilute">
+                    <h2 class="miestas">Lietuva</h2>
+                    <div class="col-sm-10">
+                        <button id="prideti" type="submit" onclick="myFunction()"><p class="pridetiMiesta" >+ Add to My Locations</p></button>
+                    </div>
+                </div>
+                <div class="virsutine">
+                    <div class="display">
+                        <p class="laikas"></p>
+                        <h1 class="name"></h1>
+                        <p class="desc"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp"></p>
+                    </div>
+                    <div class="display">
+                        <p class="laikas"></p>
+                        <h1 class="name"></h1>
+                        <p class="desc"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp"></p>
+                    </div>
+                    <div class="display">
+                        <p class="laikas"></p>
+                        <h1 class="name"></h1>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp"></p>
+                    </div>
+                    <div class="display">
+                        <p class="laikas"></p>
+                        <h1 class="name"></h1>
+                        <p class="desc"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp"></p>
+                    </div>
+                    <div class="display">
+                        <p class="laikas"></p>
+                        <h1 class="name"></h1>
+                        <p class="desc"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp"></p>
+                    </div>
+                    <div class="display">
+                        <p class="laikas"></p>
+                        <h1 class="name"></h1>
+                        <p class="desc"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp"></p>
+                    </div>
+                    <div class="display">
+                        <p class="laikas"></p>
+                        <h1 class="name"></h1>
+                        <p class="desc"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sekantis">
+            <div class="container-fluid">
+                <div class="valandos">
+                    <div class="next">
+                        <p class="laikas0"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp0"></p>
+                        <p class="name0"></p>
+                        <p class="desc0"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas1"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp1"></p>
+                        <p class="name1"></p>
+                        <p class="desc1"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas2"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp2"></p>
+                        <p class="name2"></p>
+                        <p class="desc2"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas3"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp3"></p>
+                        <p class="name3"></p>
+                        <p class="desc3"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas4"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp4"></p>
+                        <p class="name4"></p>
+                        <p class="desc4"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas5"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp5"></p>
+                        <p1 class="name5"></p1>
+                        <p class="desc5"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas6"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp6"></p>
+                        <p class="name6"></p>
+                        <p class="desc6"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas7"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp7"></p>
+                        <p class="name7"></p>
+                        <p class="desc7"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas8"></p>
+
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp8"></p>
+                        <p class="name8"></p>
+                        <p class="desc8"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas9"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp9"></p>
+                        <p class="name9"></p>
+                        <p class="desc9"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas10"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp10"></p>
+                        <p class="name10"></p>
+                        <p class="desc10"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas11"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp11"></p>
+                        <p class="name11"></p>
+                        <p class="desc11"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas12"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp12"></p>
+                        <p class="name12"></p>
+                        <p class="desc12"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas13"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp13"></p>
+                        <p class="name13"></p>
+                        <p class="desc13"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas14"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp14"></p>
+                        <p class="name14"></p>
+                        <p class="desc14"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas15"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp15"></p>
+                        <p class="name15"></p>
+                        <p class="desc15"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas16"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp16"></p>
+                        <p class="name16"></p>
+                        <p class="desc16"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas17"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp17"></p>
+                        <p class="name17"></p>
+                        <p class="desc17"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas18"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp18"></p>
+                        <p class="name18"></p>
+                        <p class="desc18"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas19"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp19"></p>
+                        <p class="name19"></p>
+                        <p class="desc19"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas20"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp20"></p>
+                        <p class="name20"></p>
+                        <p class="desc20"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas21"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp21"></p>
+                        <p class="name21"></p>
+                        <p class="desc21"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas22"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp22"></p>
+                        <p class="name22"></p>
+                        <p class="desc22"></p>
+                    </div>
+                    <div class="next">
+                        <p class="laikas23"></p>
+                        <img src="icons/unknown.png" width="20px" height="20px">
+                        <p class="temp23"></p>
+                        <p class="name23"></p>
+                        <p class="desc23"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
