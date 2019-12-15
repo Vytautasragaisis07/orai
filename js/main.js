@@ -8,9 +8,11 @@ document.getElementById("prideti").onclick = function(){
 const button = document.querySelector('.paieska');
 const inputValue = document.querySelector('.ieskojimoEilute');
 
+const weather = {};
+
 /* Ikonos pagal oro salygas */
 
-let weatherIcons = {
+let ikonos= {
     clear: '<i class="fas fa-sun"></i>',
     isolatedClouds: '<i class="fas fa-cloud"></i>',
     scatteredClouds: '<i class="fas fa-cloud-sun"></i>',
@@ -26,32 +28,32 @@ let weatherIcons = {
     humidityIcon: '<i class="fas fa-tint"></i>'
 };
 
-async function getWeatherIcon(conditionCode){
+async function ikonosGavimas(conditionCode){
     switch (conditionCode) {
         case ("clear"):
-            return weatherIcons.clear;
+            return ikonos.clear;
         case ("isolated-clouds"):
-            return weatherIcons.isolatedClouds;
+            return ikonos.isolatedClouds;
         case ("scattered-clouds"):
-            return weatherIcons.scatteredClouds;
+            return ikonos.scatteredClouds;
         case ("overcast"):
-            return weatherIcons.overcast;
+            return ikonos.overcast;
         case ("light-rain"):
-            return weatherIcons.lightRain;
+            return ikonos.lightRain;
         case ("moderate-rain"):
-            return weatherIcons.moderateRain;
+            return ikonos.moderateRain;
         case ("heavy-rain"):
-            return weatherIcons.heavyRain;
+            return ikonos.heavyRain;
         case ("sleet"):
-            return weatherIcons.sleet;
+            return ikonos.sleet;
         case ("light-snow"):
-            return weatherIcons.lightSnow;
+            return ikonos.lightSnow;
         case ("moderate-snow"):
-            return weatherIcons.moderateSnow;
+            return ikonos.moderateSnow;
         case ("heavy-snow"):
-            return weatherIcons.heavySnow;
+            return ikonos.heavySnow;
         case ("fog"):
-            return weatherIcons.fog;
+            return ikonos.fog;
     }
 }
 
@@ -72,42 +74,51 @@ button.addEventListener('click',function() {
                 name.innerHTML = nameValue;
                 document.getElementsByClassName("miestas").innerHTML = nameValue;
 
-                /* Laikas */
+
+                /* Sukuriamas valandai atskiras blokas */
+
+
+                let blokas = document.createElement('div');
+                blokas.className = 'blokelis';
+                valandu.appendChild(blokas);
+
+                /* Valandos Laikas */
 
                 let valandos = new Date(data['forecastTimestamps'][i]['forecastTimeUtc']);
                 let valanda = valandos.getHours() + ":00";
-                let laikas = document.querySelector('.laikas'+[i]);
-                laikas.innerHTML = valanda;
+                let valandele = document.createElement('p');
+                valandele.textContent = valanda;
+                blokas.appendChild(valandele);
 
-                /* Nuotrauka */
-/*
-                let weatherIcon = document.createElement('div');
-                let image = document.querySelector('img');
-                image.innerHTML = getWeatherIcon(weatherIcons[i]['conditionCode']);
-                weatherIcon.classList.add("weather-icon");
-                weatherByHours.appendChild(weatherIcon);
-*/
+                /* Ikonėlė */
 
-                /* Oro temperatura */
+               let image = document.createElement('div');
+               let imageValue = (data['forecastTimestamps'][i]['conditionCode']);
+               image.innerHTML = `<img src="icons/${imageValue}.png"/>`;
+               blokas.appendChild(image);
+
+                /* Oro Temperatūra */
 
                 let tempValue = (data['forecastTimestamps'][i]['airTemperature']);
-                let temp = document.querySelector('.temp'+[i]);
-                temp.innerHTML = tempValue + '°C';
+                let temperatura = document.createElement('p');
+                temperatura.textContent = tempValue + '°C';
+                blokas.appendChild(temperatura);
 
                 /* Krituliai */
 
                 let kritValue = (data['forecastTimestamps'][i]['totalPrecipitation']);
-                let krit = document.querySelector('.name'+[i]);
-                krit.innerHTML = kritValue + '%';
+                let krituliai = document.createElement('p');
+                krituliai.textContent = kritValue + '%';
+                blokas.appendChild(krituliai);
 
-                /* Vejo greitis */
+                /* Vėjo greitis */
 
                 let windValue = (data['forecastTimestamps'][i]['windSpeed']);
-                let wind = document.querySelector('.desc'+[i]);
-                wind.innerHTML = windValue;
+                let vejas = document.createElement('p');
+                vejas.textContent = windValue;
+                blokas.appendChild(vejas);
 
                 console.log(data['forecastTimestamps'][i]['conditionCode']);
-
             }
 
         })

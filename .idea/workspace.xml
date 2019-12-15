@@ -4,6 +4,20 @@
     <list default="true" id="d9ef068d-677e-4823-8cb3-553b25ead4f6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/01d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/03d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/04d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/04n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/09d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/09n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/10d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/10n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/11d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/13d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/13n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icons/50d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,21 +29,8 @@
       <executable />
     </execution>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>name</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-6" />
-    <option name="width" value="993" />
-    <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="1UtOCMQwetfSLbZmhrXz2Bqc4NX" />
   <component name="ProjectViewState">
@@ -39,7 +40,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../youtube" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -65,10 +67,18 @@
       <updated>1576146237430</updated>
       <workItem from="1576146239833" duration="10629000" />
       <workItem from="1576172302978" duration="1791000" />
+      <workItem from="1576429179605" duration="9341000" />
+      <workItem from="1576441104834" duration="2093000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1201" y="282" key="FileChooserDialogImpl" timestamp="1576441149442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1201" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576441149442" />
   </component>
 </project>
