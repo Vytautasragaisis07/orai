@@ -3,20 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ef068d-677e-4823-8cb3-553b25ead4f6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/01d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/03d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/04d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/04n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/09d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/09n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/10d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/10n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/11d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/13d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/13n.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/50d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../youtube" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../orelis" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -69,6 +55,8 @@
       <workItem from="1576172302978" duration="1791000" />
       <workItem from="1576429179605" duration="9341000" />
       <workItem from="1576441104834" duration="2093000" />
+      <workItem from="1576521959290" duration="2303000" />
+      <workItem from="1576524499869" duration="8376000" />
     </task>
     <servers />
   </component>
@@ -76,9 +64,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1201" y="282" key="FileChooserDialogImpl" timestamp="1576441149442">
+    <state x="1201" y="282" key="FileChooserDialogImpl" timestamp="1576531071027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1201" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576441149442" />
+    <state x="1201" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576531071027" />
   </component>
 </project>
