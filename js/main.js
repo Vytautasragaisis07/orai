@@ -1,10 +1,10 @@
-/* Prideti Mygtukas */
+/* Pridėti Mygtukas */
 document.getElementById('prideti').onclick = function() {
     document.getElementById('prideti').style.backgroundColor = 'green';
     document.getElementById('prideti').style.color = 'white';
     document.getElementById('prideti').innerHTML = 'ADDED!';
 };
-/* Paieska ir Mygtukas*/
+/* Paieška ir Mygtukas*/
 const button = document.querySelector('.paieska');
 const inputValue = document.querySelector('.ieskojimoEilute');
 
@@ -17,6 +17,56 @@ window.onload = function() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
+            Alldata = data ['forecastTimestamps'];
+            for (let i = 0; i < 7; i++) {
+
+                let todaydata = Alldata.filter(function (item) {
+                    let currentDate = new Date();
+                    let day = currentDate.getDate() + i;
+                    let month = currentDate.getMonth() + 1;
+                    let year = currentDate.getFullYear();
+                    let formatd = year + "-" + month + "-" + day;
+                    console.log(day)
+                    return item.forecastTimeUtc.includes(formatd)
+                });
+
+                /* Didžiausia ir mažiausia temperatūra */
+
+                const maxtemp = Math.max(...todaydata.map(o => o.airTemperature));
+                const mintemp = Math.min(...todaydata.map(o => o.airTemperature));
+
+                /* Sukuriamas blokas */
+
+                const savaite = document.querySelector(".virsutine")
+                let diena = document.createElement("div")
+                diena.className = 'display';
+                savaite.appendChild(diena)
+
+                /* Dienos data */
+
+                let dienosData = document.createElement('p')
+                dienosData.className = 'datap'+[i];
+                let currentDate = new Date();
+                let day = currentDate.getDate() + i;
+                diena.appendChild(dienosData)
+                dienosData.innerText = ' Diena: ' + day;
+
+                /* Įrašoma temperatūra */
+
+                let dienosTemp = document.createElement('p')
+                dienosTemp.className = 'dienosp'+[i];
+                diena.appendChild(dienosTemp)
+                dienosTemp.innerText = ' Min: ' + mintemp + ' Max: ' + maxtemp;
+
+                /* Ikonėlė */
+
+                let image = document.createElement('div');
+                image.className = 'ikona'+[i];
+                let imageValue = data['forecastTimestamps'][i]['conditionCode'];
+                image.innerHTML = `<img id="icon" src="icons/${imageValue}.png" width="100px", height="100px"/>`;
+                diena.appendChild(image);
+
+            }
             for (let i = 0; i < 24; i++) {
                 /* Miesto pavadinimas */
 
@@ -82,6 +132,37 @@ button.addEventListener('click', function() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
+            Alldata = data ['forecastTimestamps'];
+            for (let i = 0; i < 7; i++) {
+
+                let todaydata = Alldata.filter(function (item) {
+                    let currentDate = new Date();
+                    let day = currentDate.getDate() + i;
+                    let month = currentDate.getMonth() + 1;
+                    let year = currentDate.getFullYear();
+                    let formatd = year + "-" + month + "-" + day;
+                    console.log(day)
+                    return item.forecastTimeUtc.includes(formatd)
+                });
+
+                /* Didžiausia ir mažiausia temperatūra */
+
+                const maxtemp = Math.max(...todaydata.map(o => o.airTemperature));
+                const mintemp = Math.min(...todaydata.map(o => o.airTemperature));
+
+                /* Dienos data */
+
+                let dienosData = document.querySelector('.datap'+[i])
+                let currentDate = new Date();
+                let day = currentDate.getDate() + i;
+                dienosData.innerHTML = ' Diena: ' + day;
+
+                /* Įrašoma temperatūra */
+
+                let dienosTemp = document.querySelector('.dienosp'+[i])
+                dienosTemp.innerHTML = ' Min: ' + mintemp + ' Max: ' + maxtemp;
+
+            }
             for (let i = 0; i < 24; i++) {
                 /* Miesto pavadinimas */
 
@@ -103,13 +184,11 @@ button.addEventListener('click', function() {
                 let imageValue = data['forecastTimestamps'][i]['conditionCode'];
                 image.innerHTML = `<img id="icon" src="icons/${imageValue}.png"/>`;
 
-
                 /* Oro Temperatūra */
 
                 let tempValue = data['forecastTimestamps'][i]['airTemperature'];
                 let temperatura = document.querySelector('.temperaturap'+[i]);
                 temperatura.innerHTML= tempValue + '°C';
-
 
                 /* Krituliai */
 

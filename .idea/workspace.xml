@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ef068d-677e-4823-8cb3-553b25ead4f6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../orelis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Weather-app-11-28-master" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -57,6 +58,7 @@
       <workItem from="1576441104834" duration="2093000" />
       <workItem from="1576521959290" duration="2303000" />
       <workItem from="1576524499869" duration="8376000" />
+      <workItem from="1576566022809" duration="5553000" />
     </task>
     <servers />
   </component>
@@ -64,9 +66,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1201" y="282" key="FileChooserDialogImpl" timestamp="1576531071027">
+    <state x="1201" y="282" key="FileChooserDialogImpl" timestamp="1576566098739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1201" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576531071027" />
+    <state x="1201" y="282" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576566098739" />
   </component>
 </project>
